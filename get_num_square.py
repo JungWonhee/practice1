@@ -4,7 +4,7 @@ num = os.environ.get("INPUT_NUM")
 
 if num:
     try:
-        num = int(num)
+        num = input(num)
     except Exception:
       exit()
 else:
