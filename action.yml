@@ -21,7 +21,7 @@ runs:
       shell: bash
     - name: Pass inputs to Shell
       run: |
-        echo "INPUT_NUM=${{ input.num }}" >> $GITHUB-ENV
+        echo "INPUT_NUM=${{ inputs.num }}" >> $GITHUB-ENV
       shell: bash
     - name: Fatch the number's square
       id: get-square
